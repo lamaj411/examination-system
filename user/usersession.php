@@ -1,0 +1,23 @@
+<html>
+<head>
+<script language="JavaScript"><!--
+javascript:window.history.forward(0);
+//--></script>
+</head>
+<body>
+<?php
+include("connection.php");
+$u=$_SESSION["u"];
+if($u)
+{
+	$u=$_SESSION["u"];
+}
+else
+{
+	unset($_SESSION['u']);
+	session_destroy();
+	header("location:index.php");
+}
+?>
+</body>
+</html>

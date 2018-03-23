@@ -1,0 +1,129 @@
+.checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+
+
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
+
+ .radio p {
+	cursor: pointer;
+	z-index: 99;
+}
+
+
+.scrolla {
+	height: 250px;
+	overflow-y: auto;
+}
+
+.trapezoid{
+  padding: 9px;
+  border-radius: 50%;
+  text-align: center;
+  background: #505050;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+
+}
+ 
+ ::-webkit-scrollbar {
+     width:10px; 
+ }
+ ::-webkit-scrollbar-button {
+     background: #ccc
+ }
+ ::-webkit-scrollbar-track-piece {
+     background: #888
+ }
+ ::-webkit-scrollbar-thumb {
+     background: #eee
+ }
+ .tvac div {
+ 	margin: 0px 25%;
+ }
+
+ .bg-div-success {
+ 	background: #0CFF00;
+ }
+ .bg-div-danger {
+ 	background: #FF0024;
+ }
+
+ .bg-div-info {
+ 	background: #00FFE4;
+ }
+
+ .bg-div-warning {
+ 	background: #FF8A00;
+ }
+
+ .bg-div-marked {
+ 	background: #C000FF;
+ }

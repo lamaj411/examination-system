@@ -1,0 +1,16 @@
+<?php
+session_start();
+include("connection.php");
+include("usersession.php");
+$QPID=$_SESSION["QPID"];
+$rolno=$_SESSION["ROLNO"];
+$username=$_SESSION["URNAME"];
+$NOFQ=$_SESSION["nofq"];
+$qno=$_SESSION["QNO"];
+$qno=$qno+1;
+$_SESSION["QNO"]=$qno;
+//$index=$_SESSION["index"];
+//$index=$index+1;
+//$_SESSION["index"]=$index;
+header("location:testtemp.php");
+?>
